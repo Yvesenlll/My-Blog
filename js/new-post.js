@@ -10,10 +10,10 @@ const submitNewPost = () => {
     data.append('content', content);
 
 
+    //this fetch has some error or some differences, .then() is not working.?????????
     window.location.href = "index.html";
     fetch(API_URL, {
         method: 'POST',
         body: data,
     })
-    console.log(data)
 }
